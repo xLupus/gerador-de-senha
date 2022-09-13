@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gerador de Senha JS</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <div class="modal"></div><!-- modal -->
+
+        <div class="container">
+
+            <textarea id="senha-gerada" cols="30" rows="10" readonly>Sua senha é...</textarea>
+
+            <div class="input-container">
+                <div class="input-numero">
+                    <label for="quant_caracter">Quantos digitos sua senha terá:</label>
+                    <input type="number" id="quant_caracter" min="1">
+                </div><!-- input-numero -->
+
+                <div class="input-check">
+                    <label for="letra_min">Inserir Letras Minusculas</label>
+                    <input type="checkbox"  id="letra_min">
+                </div><!-- input-check -->
+
+                <div class="input-check">
+                    <label for="letra_maius">Inserir Letras Maiusculas</label>
+                    <input type="checkbox" id="letra_maius">
+                </div><!-- input-check -->
+
+                <div class="input-check">
+                    <label for="caracter_especial">Inserir caracteres especiais</label>
+                    <input type="checkbox"id="caracter_especial" >
+                </div><!-- input-check -->
+
+                <div class="input-check">
+                    <label for="numero">Inserir numeros</label>
+                    <input type="checkbox"  id="numero">
+                </div><!-- input-check -->
+            </div><!-- input-container -->
+
+            <div class="btns">
+                <input type="submit" value="Gerar Senha" id="gerar">
+                <input type="submit" value="Copiar Senha" id="copiar">
+            </div><!-- btns -->
+        </div><!-- container -->
+
+        <script src="script.js"></script>
+    </body>
+</html>
